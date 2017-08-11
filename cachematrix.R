@@ -35,3 +35,12 @@ cacheSolve <- function(x, ...) {
   x$setinverse(i)
   i
 }
+
+## Testing
+## Below we call the function with a matrix, 
+## compute the inverse, retrieve the inverse from the cache list, change the call matrix to the inverse, 
+## compute the inverse on that and return the original function
+
+## B <- matrix(c(1,2,3,4),2,2)
+## B1 <- makeCacheMatrix(B)
+## cacheSolve(B1)
